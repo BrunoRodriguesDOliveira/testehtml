@@ -8,7 +8,7 @@
         body{
             font-family: 'Times New Roman', Times, serif;
             background-color: #f4f4f9;
-            color:#333;
+            color: #333;
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,6 +17,7 @@
             justify-content: center;
             min-height: 100vh;
         }
+
         h1{
             font-size: 2.5rem;
             color: #00bcd4;
@@ -25,11 +26,12 @@
             letter-spacing: 2px;
             text-align: center;
         }
+
         h2{
             font-size: 1.8rem;
             color: #00bcd4;
-            margin:20px 0;
-            text-transform: uppercase;
+            margin: 20px 0;
+            text-transform: uppercase; 
         }
 
         ol, ul, li {
@@ -37,42 +39,44 @@
             border-radius: 8px;
             padding: 12px;
             margin-bottom: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, background-color 0.3s ease;
-
         }
-        ol li:hover, ul li:hove{
-            transform: translatey(-5px);
+        ol li:hover,  ul li:hover{
+            transform: translateY(-5px);
             background-color: #00bcd4;
-            color:#fff;
-
+            color: #fff;
         }
-        d1 dd{
+
+        dl dd{
             padding: 8px 16px;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin-bottom: 8px;
             transition: transform 0.3s ease, background-color 0.3s ease;
+        }
 
-        }
-        d1 dd:hover{
-            transform: translatey(-5px);
+        dl dd:hover{
+            transform: translateY(-5px);
             background-color: #00bcd4;
-            color:#fff;
+            color: #fff;
         }
-        h1,h2, ol li, ul li, dl dd{
+
+        h1, h2, ol li, ul li, dl dd{
+            list-style: none;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        h1:hover,h2:hover, ol li:hover, ul li:hover, dl dd:hover{
-            box-shadow: 0 6px 12px rgba(0,188,212,0.3);
-        }
 
+        h1:hover, h2:hover, ol li:hover, ul li:hover, dl dd:hover{
+            box-shadow: 0 6px 12px rgba(0, 188, 212, 0.3);
+        }
     </style>
 </head>
 <body>
     <h1>Listas</h1>
-    <!--Listas ordenada-->
+
+    <!-- Listas Ordenada -->
     <h2>Aprovados</h2>
     <ol>
         <li>Bia</li>
@@ -80,25 +84,27 @@
         <li>Ana</li>
         <li>João</li>
     </ol>
-    <!--Lista não ordenada-->
-    <h2>Lista de Compras</h2>
-    <ul>
+    
+    <!-- Lista Não Ordenada -->
+     <h2>Lista de Compras</h2>
+     <ul>
         <li>Queijo</li>
         <li>Leite</li>
         <li>Arroz</li>
-        <li>Pao</li>
-    </ul>
-    <!--Lista de definiçao-->
-    <h2>Principais de termos de glossário de Cloud Computing</h2>
-    <d1>
+        <li>Pão</li>
+     </ul>
+
+     <!-- Lista de Definição -->
+      <h2>Principais termos do glossário de Cloud Computing</h2>
+      <dl>
         <dt>BaaS</dt>
         <dd>Backend Como Serviço</dd>
         <dt>Iaas</dt>
-        <dd>Infraestrutura como serviços</dd>
-        <dt>PaaS</dt>
-        <dd>Plataforma como serviço</dd>
-        <dt>Saas</dt>Sass
+        <dd>Infraestrutura Como Serviço</dd>
+        <dt>Paas</dt>
+        <dd>Plataforma Como Serviço</dd>
+        <dt>Saas</dt>
         <dd>Software Como Serviço</dd>
-    </d1>
+      </dl>
 </body>
 </html>
